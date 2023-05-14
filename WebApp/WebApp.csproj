@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Models\Request\" />
+    <None Remove="Models\Response\" />
+    <None Remove="DataBase\" />
+    <None Remove="Services\" />
+    <None Remove="Api\ServiceInterface\" />
+    <None Remove="Api\Service\" />
+    <None Remove="DataBase\Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\Request\" />
+    <Folder Include="Models\Response\" />
+    <Folder Include="DataBase\" />
+    <Folder Include="Api\" />
+    <Folder Include="Api\ServiceInterface\" />
+    <Folder Include="Api\Service\" />
+    <Folder Include="DataBase\Entities\" />
+  </ItemGroup>
+</Project>
